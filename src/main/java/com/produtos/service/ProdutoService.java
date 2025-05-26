@@ -13,6 +13,7 @@ public class ProdutoService {
         this.quantidade = quantidade;
     }
 
+    // Getters
     public int getId() {
         return id;
     }
@@ -29,6 +30,7 @@ public class ProdutoService {
         return quantidade;
     }
 
+    // Setters
     public void setId(int id) {
         this.id = id;
     }
@@ -51,7 +53,11 @@ public class ProdutoService {
 
     @Override
     public String toString() {
-        return String.format("ID: %d | Nome: %s | Preço: R$ %.2f | Quantidade: %d | Total: R$ %.2f",
-                id, nome, preco, quantidade, getTotalProduto());
+        return "ProdutoService{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", preco=" + preco +
+                ", quantidade=" + quantidade +
+                '}';
     }
 }
